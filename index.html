@@ -4,18 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>DOM Form</title>
   </head>
   <body>
-    <div class="container"></div>
-    <script src="script.js"></script>
+    <form action="">
+      <input type="text" placeholder="Your First Name" id="fname" />
+      <input type="text" placeholder="Your Last Name" id="lname" />
+      <input type="text" placeholder="Your Address" id="address" />
+      <input type="text" placeholder="Pincode" id="pincode" />
+      <select name="gender" id="gender">
+        <option disabled selected>Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <select name="food" id="food" multiple>
+        <option disabled selected>Select your choice of food</option>
+        <option value="Chicken Briyani">Chicken Briyani</option>
+        <option value="Mutton Briyani">Mutton Briyani</option>
+        <option value="Chicken Tikka">Chicken Tikka</option>
+        <option value="Chicken 65">Chicken 65</option>
+        <option value="Fish Fry">Fish Fry</option>
+      </select>
+      <input type="text" placeholder="State" id="state" />
+      <input type="text" placeholder="Country" id="country" />
+      <button type="submit" id="btn">Add to table</button>
+    </form>
+    <table>
+      <tr>
+        <th>S.No</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>Pincode</th>
+        <th>Gender</th>
+        <th>Food</th>
+        <th>State</th>
+        <th>Country</th>
+      </tr>
+    </table>
   </body>
 </html>
